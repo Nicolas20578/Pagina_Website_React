@@ -45,9 +45,11 @@
 }
 
 .i-icons{
-    margin-top: 3rem;
+    margin-top: 0rem;
     display: flex;
-    gap: 0rem;
+    gap: 5%;
+    width: 20%;
+    height: 30%;
 }
 
 .i-icons>*{
@@ -60,4 +62,49 @@
 
 .i-right{
     flex: 1;
+    position: relative;
+}
+
+.i-right>*{
+    position: absolute;
+    z-index: 1;
+}
+
+.i-right>:nth-child(1){
+    transform: scale(1.0);
+    left: -15%;
+    top: -10%;
+}
+
+.i-right>:nth-child(2){
+    top: -2.6rem;
+    transform: scale(1.1);
+    left: 1rem;
+}
+
+.i-right>:nth-child(3){
+    margin-top: -10%;
+    transform: scale(0.6);
+    left: -10;
+}
+
+.i-right>:nth-child(4){
+    transform: scale(0.6);
+    top: -19%;
+    left: -24%;
+    border-radius: 50%;
+    padding: 0;
+}
+
+.blur{
+    position: absolute;
+    width: 22rem;
+    height: 14rem;
+    border-radius: 50%;
+    background: #8de3ee;
+    filter: blur(212px);
+    z-index: -9;
+    top: -18%;
+    left: 56%;
+    filter: blur(72px);
 }
